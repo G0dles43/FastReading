@@ -4,7 +4,7 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 
 def index(request):
-    return HttpResponse("Siemano")
+    return HttpResponse("Siemano@")
 
 
 @api_view(['GET'])

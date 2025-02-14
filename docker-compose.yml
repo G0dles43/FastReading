@@ -7,6 +7,7 @@ services:
       - "8000:8000"
     networks:
       - app_network
+    container_name: backend
 
   frontend:
     build: ./frontend
@@ -16,6 +17,7 @@ services:
       - backend
     networks:
       - app_network
+    container_name: frontend
 
 networks:
   app_network:
